@@ -1,5 +1,23 @@
 # Mobile Web Specialist Certification Course
 ---
+I was provided with a unfinished and unresponsive app. I had to make it responsive, accessible and a working app when user network get offline.
+
+The project is an part of Front-End-Udacity Course.
+
+## How to download the code
+
+For downloading the code you can, click on clone or download green button on the right side of the screen
+
+# OR
+
+You can clone the project using this command 
+
+ `git clone https://github.com/devhpes/fend-restaurant-review-app`
+
+## View my project online
+
+You can view my project online by clicking this link - https://devhpes.github.io/fend-restaurant-review-app/
+
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
 ## Project Overview: Stage 1
