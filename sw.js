@@ -38,6 +38,7 @@ self.addEventListener('activate', function(event) {
         cacheNames.filter(function(cacheName) {
           return cacheName.startsWith('rs-') &&
                  cacheName != staticCacheName;
+        //Deleting any caches which is not needed
         }).map(function(cacheName) {
           return caches.delete(cacheName);
         })
@@ -48,8 +49,10 @@ self.addEventListener('activate', function(event) {
 
 //Adding fetch and responding caches
 self.addEventListener('fetch', function(event) {
+// Handling request and checking the cache
   event.respondWith(
     caches.match(event.request).then(function(response) {
+    // If there was an error return the response
       return response || fetch(event.request);
     })
   );
