@@ -6,11 +6,11 @@ The project is an part of Front-End-Udacity Course.
 
 ## How to download the code
 
-For downloading the code you can, click on clone or download green button on the right side of the screen
+For downloading the code you can, click on clone or download green button on the right side of the screen.
 
 # OR
 
-You can clone the project using this command 
+You can clone the project using the below command.
 
  `git clone https://github.com/devhpes/fend-restaurant-review-app`
 
