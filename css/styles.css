@@ -411,3 +411,47 @@ nav h1 a {
 	background-color: rgb(241, 130, 0);
 	border-radius: 4px;
 }
+
+/* Media query for responsivness */
+
+@media only screen and (max-width: 500px) {
+	.filter-options {
+		height: 160px;
+	}
+}
+
+@media only screen and (max-width: 749px) {
+	#restaurants-list li {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 396px) {
+	nav {
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	nav {
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.filter-options {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 396px) {
+	#restaurant-name {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	#restaurant-name {
+		padding-top: 80px;
+	}
+}
