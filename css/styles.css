@@ -493,3 +493,24 @@ media (max-width: 800px) {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 875px) {
+	#restaurant-container {
+		width: 100%;
+	}
+	#reviews-container {
+		width: 100%;
+	}
+	#breadcrumb {
+		width: 100%;
+	}
+	#restaurant-hours td {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	.leaflet-control {
+		margin-top: 50px;
+	}
+}
