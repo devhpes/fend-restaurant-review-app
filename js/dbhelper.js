@@ -9,7 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     //const port = 5500 // Change this to your server port
-    return `https://devhpes.github.io/fend-restaurant-review-app/blob/master/data/restaurants.json`;
+    return `//devhpes.github.io/fend-restaurant-review-app/data/restaurants.json`;
   }
 
   /**
@@ -150,7 +150,7 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return `https://devhpes.github.io/fend-restaurant-review-app/tree/master/img/${restaurant.photograph}`;
+    return `https://devhpes.github.io/fend-restaurant-review-app/img/${restaurant.photograph}`;
   }
 
   /**
