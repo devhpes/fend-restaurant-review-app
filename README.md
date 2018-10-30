@@ -18,6 +18,10 @@ You can clone the project using the below command.
 
 You can view my project online by clicking this link - https://devhpes.github.io/fend-restaurant-review-app/
 
+## Screenshot
+
+![ScreenShot](https://raw.githubusercontent.com/devhpes/fend-restaurant-review-app/master/img/screenshot.png)
+
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
 ## Project Overview: Stage 1
