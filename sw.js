@@ -53,7 +53,28 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
     // If there was an error return the response
-      return response || fetch(event.request);
+      if (response) {
+        return response;
+      }
+
+      const cacheFetchRequest = event.request.clone();
+
+      return fetch(cacheFetchRequest).then(
+        function (response){
+          // Checking if we get the valid response or not
+          if (!response || response !==200 || response.type !== 'basic') {
+            return response;
+          }
+          const responseToCache = response.clone();
+
+          caches.open(CACHE_NAME)
+            .then(function(cache) {
+              cache.put(event.request, responseToCache);
+            });
+
+          return response;
+        }
+      )
     })
   );
 });
