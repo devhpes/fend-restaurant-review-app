@@ -1,6 +1,6 @@
 'use strict';
 
-var staticCacheName = 'rs-static-v1';
+var staticCacheName = 'rs-static-v1.1';
 
 // Installing the service worker
 self.addEventListener('install', function (event) {
@@ -67,7 +67,7 @@ self.addEventListener('fetch', function(event) {
           }
           const responseToCache = response.clone();
 
-          caches.open(CACHE_NAME)
+          caches.open(staticCacheName)
             .then(function(cache) {
               cache.put(event.request, responseToCache);
             });
