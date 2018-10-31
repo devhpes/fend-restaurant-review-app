@@ -1,5 +1,5 @@
 
-var staticCacheName = 'rs-static-v1';
+var staticCacheName = 'rs-static-v1.1';
 
 // Installing the service worker
 self.addEventListener('install', function (event) {
