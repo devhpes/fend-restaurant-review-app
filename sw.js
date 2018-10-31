@@ -1,6 +1,5 @@
-'use strict';
 
-var staticCacheName = 'rs-static-v1.1';
+var staticCacheName = 'rs-static-v1';
 
 // Installing the service worker
 self.addEventListener('install', function (event) {
@@ -51,7 +50,8 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', function(event) {
 // Handling request and checking the cache
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request)
+    .then(function(response) {
     // If there was an error return the response
       if (response) {
         return response;
@@ -60,9 +60,9 @@ self.addEventListener('fetch', function(event) {
       const cacheFetchRequest = event.request.clone();
 
       return fetch(cacheFetchRequest).then(
-        function (response){
-          // Checking if we get the valid response or not
-          if (!response || response.status !==200 || response.type !== 'basic') {
+        function(response) {
+          // Check if we received a valid response
+          if(!response || response.status !== 200 || response.type !== 'basic') {
             return response;
           }
           //Cloning the reponse again
