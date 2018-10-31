@@ -57,7 +57,7 @@ self.addEventListener('fetch', function(event) {
         return response;
       }
 
-      const cacheFetchRequest = event.request.clone();
+      var cacheFetchRequest = event.request.clone();
 
       return fetch(cacheFetchRequest).then(
         function(response) {
@@ -66,7 +66,7 @@ self.addEventListener('fetch', function(event) {
             return response;
           }
           //Cloning the reponse again
-          const responseToCache = response.clone();
+          var responseToCache = response.clone();
 
           caches.open(staticCacheName)
             .then(function(cache) {
