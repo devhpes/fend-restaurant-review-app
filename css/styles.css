@@ -302,6 +302,10 @@ nav h1 a {
 	line-height: 1.1;
 }
 
+.restaurantHeading {
+	margin-top: 10px;
+}
+
 #restaurant-img {
 	width: 100%;
 	border-radius: 5px;
