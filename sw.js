@@ -62,7 +62,7 @@ self.addEventListener('fetch', function(event) {
       return fetch(cacheFetchRequest).then(
         function (response){
           // Checking if we get the valid response or not
-          if (!response || response !==200 || response.type !== 'basic') {
+          if (!response || response !==200 || response.type !== 'basic' || cachefetchRequest.method === "POST") {
             return response;
           }
           const responseToCache = response.clone();
